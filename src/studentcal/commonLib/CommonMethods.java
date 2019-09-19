@@ -26,7 +26,8 @@ import studentcal.pageobjectrepo.LoginPage;
 		
 		return driver;		
 
- }
+	}
+	
 	
 }
 	

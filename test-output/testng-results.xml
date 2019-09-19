@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27416" started-at="2019-09-17T00:43:06Z" finished-at="2019-09-17T00:43:34Z">
+  <suite name="Default suite" duration-ms="33130" started-at="2019-09-19T06:39:34Z" finished-at="2019-09-19T06:40:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27416" started-at="2019-09-17T00:43:06Z" finished-at="2019-09-17T00:43:34Z">
+    <test name="Default test" duration-ms="33130" started-at="2019-09-19T06:39:34Z" finished-at="2019-09-19T06:40:07Z">
       <class name="studentcal.accesscalendar.AccessCalendar">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="beforeTest" is-config="true" duration-ms="3843" started-at="2019-09-17T10:43:06Z" finished-at="2019-09-17T10:43:10Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="beforeTest" is-config="true" duration-ms="4089" started-at="2019-09-19T16:39:34Z" finished-at="2019-09-19T16:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginpage()[pri:1, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="loginpage" duration-ms="9577" started-at="2019-09-17T10:43:10Z" description="link to Student Calendar" finished-at="2019-09-17T10:43:20Z">
+        <test-method status="PASS" signature="loginpage()[pri:1, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="loginpage" duration-ms="9023" started-at="2019-09-19T16:39:38Z" description="link to Student Calendar" finished-at="2019-09-19T16:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method status="PASS" signature="login()[pri:2, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="login" duration-ms="11894" started-at="2019-09-17T10:43:20Z" description="Login to Student Calendar" finished-at="2019-09-17T10:43:32Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="login" duration-ms="11702" started-at="2019-09-19T16:39:47Z" description="Login to Student Calendar" finished-at="2019-09-19T16:39:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="afterTest" is-config="true" duration-ms="2083" started-at="2019-09-17T10:43:32Z" finished-at="2019-09-17T10:43:34Z">
+        <test-method status="PASS" signature="filters()[pri:3, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="filters" duration-ms="6206" started-at="2019-09-19T16:39:59Z" description="SwiFilters" finished-at="2019-09-19T16:40:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filters -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:studentcal.accesscalendar.AccessCalendar@4c70fda8]" name="afterTest" is-config="true" duration-ms="2090" started-at="2019-09-19T16:40:05Z" finished-at="2019-09-19T16:40:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

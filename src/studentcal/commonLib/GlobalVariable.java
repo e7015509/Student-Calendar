@@ -15,7 +15,7 @@ public class GlobalVariable {
 	
 	public void global()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\e7015509\\workspace\\StudentCalendar\\browserDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\e7015509\\Documents\\Automation_Repo\\Student-Calendar\\browserDriver\\chromedriver.exe");
 		/*Driver.getDriverPath(browser);*/
 		DataBroker TestData = new DataBroker();
 		String [] csvCell;

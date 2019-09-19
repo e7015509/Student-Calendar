@@ -16,7 +16,7 @@ public class DataBroker {
 			String password = null;
 			
 
-			String CSV_PATH = "C:\\Users\\e7015509\\workspace\\StudentCalendar\\TestData\\studentcal.csv"; // File path to your TestData.csv file
+			String CSV_PATH = "C:\\Users\\e7015509\\Documents\\Automation_Repo\\Student-Calendar\\TestData\\studentcal.csv"; // File path to your TestData.csv file
 			
 			try {
 				  CSVReader reader = new CSVReader(new FileReader(CSV_PATH));

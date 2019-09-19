@@ -5,9 +5,9 @@
     <classes>
       <class name="studentcal.accesscalendar.AccessCalendar">
         <methods>
+          <include name="filters"/>
           <include name="beforeTest"/>
-          <include name="login"/>
-          <include name="loginpage"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- studentcal.accesscalendar.AccessCalendar -->
     </classes>
