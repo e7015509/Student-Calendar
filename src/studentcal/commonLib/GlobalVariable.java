@@ -12,6 +12,10 @@ public class GlobalVariable {
 	public String expLoginPageTitle;
 	public String userName;
 	public String password;
+	public String expCurrMthCalTitle;
+	public String expTabMthLbl;
+	public String expTabDayLbl;
+	public String expTabWeekLbl;
 	
 	public void global()
 	{
@@ -25,6 +29,10 @@ public class GlobalVariable {
 		expLoginPageTitle = csvCell[1];
 		userName = csvCell[2];
 		password = csvCell[3];
+		expCurrMthCalTitle = csvCell[4];
+		expTabMthLbl = csvCell[5];
+		expTabDayLbl = csvCell[6];
+		expTabWeekLbl = csvCell[7];
 		   
 		
 		/*Driver.getDriver(browser);*/

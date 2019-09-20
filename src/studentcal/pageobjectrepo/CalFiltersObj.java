@@ -5,17 +5,14 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CalendarPage {
+public class CalFiltersObj {
 	
 private static WebElement element = null;
 
-	/*Switch to iframe of the filters -event type and campus*/
-	public static void switchToFilterFrame(WebDriver driver){
-	driver.switchTo().frame("calendarFilterSpud.iframe");		
-	}
-	
 	/*public static void selectEventType(WebDriver driver, String eventTypeOption){
 	driver.findElement(By.xpath("//div[@id='ctl05_ctl01_ctl01']//div[@class='twFilterDiv']//input[@aria-label= "+eventTypeOption+"]")).click();*/
 	/*-----Event type Filters-------*/
@@ -41,13 +38,15 @@ private static WebElement element = null;
 	
 	public static WebElement link_evttype_selDeselAll(WebDriver driver) throws InterruptedException{
 		element=driver.findElement(By.xpath("//div[@id='ctl05_ctl01_ctl01']//div[@class='twFilterSelect']//a[@aria-label='Select all Event Type']"));
-		Thread.sleep(3000);
+		WebDriverWait wait=new WebDriverWait(driver,60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl05_ctl01_divFilter")));
 		return element;
 	}
 	
 	public static WebElement link_evttype_selDeselNone(WebDriver driver) throws InterruptedException{
 		element=driver.findElement(By.xpath("//div[@id='ctl05_ctl01_ctl01']//div[@class='twFilterSelect']//a[@aria-label='Select no Event Type']"));
-		Thread.sleep(3000);
+		WebDriverWait wait=new WebDriverWait(driver,60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl05_ctl01_divFilter")));
 		return element;
 	}
 	
@@ -93,6 +92,13 @@ private static WebElement element = null;
 	
 	public static WebElement chkbx_campus_werribee(WebDriver driver){
 		element=driver.findElement(By.xpath("//div[@id='ctl05_ctl01_ctl01']//div[@class='twFilterDiv']//input[@aria-label= 'Werribee']"));
+		return element;
+	 }
+	
+	/*--------------------------------------Event type Search Criteria Text------------------------------------*/
+	
+	public static WebElement msgbox_searchcriteria_academic(WebDriver driver){
+		element=driver.findElement(By.xpath("//span[@class='twSearchInfoText']"));
 		return element;
 	 }
 	

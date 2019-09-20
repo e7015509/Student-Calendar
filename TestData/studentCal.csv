@@ -1,2 +1,2 @@
-loginPage,expLoginPagetitle,userName,password
-https://devportaltmp.vu.edu.au/VUCalendar/,Victoria University Central Authentication Service,s1031853,Password01
+loginPage,expLoginPagetitle,userName,password,expCurrMthCalTitle,expTabMthLbl,expTabDayLbl,expTabWeekLbl
+https://devportaltmp.vu.edu.au/VUCalendar/,Victoria University Central Authentication Service,s1031853,Password01,September 2019,Month,Day,Week

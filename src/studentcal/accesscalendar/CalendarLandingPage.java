@@ -16,25 +16,44 @@ public class CalendarLandingPage extends GlobalVariable {
 
 	CommonMethods commMethods=new CommonMethods();
 		
-	 @Test(priority=1, description="link to Student Calendar")
+	 @Test(priority=1, description="Access link to Student Calendar")
 	  public void loginpage() throws InterruptedException {
 		commMethods.linktostudentCal(driver, loginPageURL);
 		String actualTitle = driver.getTitle();
 	    System.out.println(actualTitle); // printing the actual page title
-	    AssertJUnit.assertEquals(actualTitle, expLoginPageTitle);
-	    Thread.sleep(5000);
-	}
+	    Assert.assertEquals(actualTitle, expLoginPageTitle);
+	 }
 	 
 	 @Test(priority=2, description="Login to Student Calendar")
 	  public void login() throws InterruptedException {
 		commMethods.logintostudentCal(driver, userName, password);
 	 } 
-	 
-	@Test(priority=3, description="Select Academic Calendar Event type")
-	public void filters() throws InterruptedException{
-		CalendarPage.switchToFilterFrame(driver);
-		CalendarPage.link_evttype_selDeselNone(driver).click();
-		CalendarPage.chkbx_eventtyp_academic(driver).click();
+	
+	@Test(priority=3, description="Validate default elements in landing page - current month calendar")
+	 public void currentmthcalendar(){
+		 commMethods.switchToCurrMthCalFrame(driver);
+		 String actualCurrMthCalTitle = CalLandingPageObj.cal_currentmonthcalendarlbl(driver).getText();
+		 System.out.println(actualCurrMthCalTitle); //printing the current month calendar title
+		 Assert.assertEquals(actualCurrMthCalTitle, expCurrMthCalTitle);
+		 CalLandingPageObj.cal_currentmonthcalendar(driver).isDisplayed(); //verify current month calendar element is displayed
+		 CalLandingPageObj.btn_currmthcalendarpager_prev(driver).isDisplayed(); //previous btn
+		 CalLandingPageObj.btn_currmthcalendarpager_next(driver).isDisplayed(); //next btn
+		 driver.switchTo().defaultContent();
+	 }
+	
+	@Test(priority=4, description="Validate default elements in landing page - tab views")
+	public void calendarviews(){
+		commMethods.switchToTabFrame(driver);
+		String actualTabMthLbl = CalLandingPageObj.tab_month(driver).getText();
+		Assert.assertEquals(actualTabMthLbl, expTabMthLbl);
+		System.out.println(actualTabMthLbl); //print the month tab label
+		String actualTabDayLbl = CalLandingPageObj.tab_day(driver).getText();
+		Assert.assertEquals(actualTabDayLbl, expTabDayLbl);
+		System.out.println(actualTabDayLbl); //print the day tab label
+		String actualTabWeekLbl = CalLandingPageObj.tab_week(driver).getText();
+		Assert.assertEquals(actualTabWeekLbl, expTabWeekLbl);
+		System.out.println(actualTabWeekLbl); //print the day tab label
+		 driver.switchTo().defaultContent();
 	}
 		
 	 @BeforeTest

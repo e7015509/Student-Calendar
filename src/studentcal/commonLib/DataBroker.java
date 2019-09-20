@@ -14,6 +14,11 @@ public class DataBroker {
 		   	String expLoginPageTitle =null;
 		   	String userName = null;
 			String password = null;
+			String expCurrMthCalTitle = null;
+			String expTabMthLbl = null;
+			String expTabDayLbl = null;
+			String expTabWeekLbl = null;
+		
 			
 
 			String CSV_PATH = "C:\\Users\\e7015509\\Documents\\Automation_Repo\\Student-Calendar\\TestData\\studentcal.csv"; // File path to your TestData.csv file
@@ -30,6 +35,10 @@ public class DataBroker {
 				   expLoginPageTitle = csvCell[1];
 				   userName = csvCell[2];
 				   password = csvCell[3];
+				   expCurrMthCalTitle = csvCell[4];
+				   expTabMthLbl = csvCell[5];
+				   expTabDayLbl = csvCell[6];
+				   expTabWeekLbl = csvCell[7];
 				   
 		   
 					//Printing retrieved data
@@ -43,7 +52,7 @@ public class DataBroker {
 		           e.printStackTrace();
 		       }
 			
-			String [] RetrivedData = {loginPageURL,expLoginPageTitle,userName,password};
+			String [] RetrivedData = {loginPageURL,expLoginPageTitle,userName,password,expCurrMthCalTitle,expTabMthLbl,expTabDayLbl,expTabWeekLbl};
 			return RetrivedData;	
 	  }
 }
