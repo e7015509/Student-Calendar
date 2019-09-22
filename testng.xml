@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+  <test name="CalendarLandingPageTest">
     <classes>
-      <class name="studentcal.accesscalendar.CalendarLandingPage"/>
-       <class name="studentcal.accesscalendar.CalendarFilters"/>
+         <class name="studentcal.calendartests.CalendarLandingPageTest"/>
     </classes>
-  </test> <!-- Test -->
+    </test>
+    <test name="CalendarFilterTest">
+    <classes>
+         <class name="studentcal.calendartests.CalendarFilterTest"/>
+    </classes>  
+ 	</test> <!-- Test -->
 </suite> <!-- Suite -->

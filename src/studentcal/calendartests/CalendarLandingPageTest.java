@@ -8,7 +8,7 @@ import studentcal.commonLib.*;
 import studentcal.pageobjectrepo.*;
 
 
-public class CalendarLandingPage extends GlobalVariable {
+public class CalendarLandingPageTest extends GlobalVariable {
 
 	CommonMethods commMethods=new CommonMethods();
 		

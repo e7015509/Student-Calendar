@@ -25,6 +25,7 @@ import studentcal.pageobjectrepo.LoginPageObj;
 	 
 	 /*URL to Student Calendar */
 	 public WebDriver linktostudentCal(WebDriver driver, String studentcalLink) throws InterruptedException{
+		 System.out.println("***************driver" + driver);
 		 driver.get(studentcalLink);
 		WebDriverWait wait=new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='login']")));
