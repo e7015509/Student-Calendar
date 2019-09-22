@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30537" started-at="2019-09-20T06:04:36Z" finished-at="2019-09-20T06:05:07Z">
+  <suite name="Default suite" duration-ms="4549" started-at="2019-09-22T13:20:28Z" finished-at="2019-09-22T13:20:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30537" started-at="2019-09-20T06:04:36Z" finished-at="2019-09-20T06:05:07Z">
-      <class name="studentcal.accesscalendar.CalendarFilters">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:studentcal.accesscalendar.CalendarFilters@4c70fda8]" name="beforeTest" is-config="true" duration-ms="3806" started-at="2019-09-20T16:04:36Z" finished-at="2019-09-20T16:04:40Z">
+    <test name="Default test" duration-ms="4549" started-at="2019-09-22T13:20:28Z" finished-at="2019-09-22T13:20:33Z">
+      <class name="studentcal.calendartests.CalendarFilterTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:studentcal.calendartests.CalendarFilterTest@343f4d3d]" name="beforeTest" is-config="true" duration-ms="4118" started-at="2019-09-22T23:20:28Z" finished-at="2019-09-22T23:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="filters()[pri:1, instance:studentcal.accesscalendar.CalendarFilters@4c70fda8]" name="filters" duration-ms="24380" started-at="2019-09-20T16:04:40Z" description="Select Academic Calendar Event type" finished-at="2019-09-20T16:05:04Z">
+        <test-method status="PASS" signature="academiccalendar()[pri:1, instance:studentcal.calendartests.CalendarFilterTest@343f4d3d]" name="academiccalendar" duration-ms="330" started-at="2019-09-22T23:20:33Z" description="Select Academic Calendar Event type" finished-at="2019-09-22T23:20:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filters -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:studentcal.accesscalendar.CalendarFilters@4c70fda8]" name="afterTest" is-config="true" duration-ms="2316" started-at="2019-09-20T16:05:04Z" finished-at="2019-09-20T16:05:07Z">
+        </test-method> <!-- academiccalendar -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:studentcal.calendartests.CalendarFilterTest@343f4d3d]" name="afterTest" is-config="true" duration-ms="87" started-at="2019-09-22T23:20:33Z" finished-at="2019-09-22T23:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- studentcal.accesscalendar.CalendarFilters -->
+      </class> <!-- studentcal.calendartests.CalendarFilterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

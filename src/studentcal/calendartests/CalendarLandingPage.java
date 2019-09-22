@@ -1,13 +1,9 @@
-package studentcal.accesscalendar;
+package studentcal.calendartests;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 import studentcal.commonLib.*;
 import studentcal.pageobjectrepo.*;
 

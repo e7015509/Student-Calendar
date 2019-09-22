@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="studentcal.accesscalendar.AccessCalendar"/>
+      <class name="studentcal.accesscalendar.CalendarLandingPage"/>
+       <class name="studentcal.accesscalendar.CalendarFilters"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
